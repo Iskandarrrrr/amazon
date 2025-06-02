@@ -1,0 +1,11 @@
+{% load blog_tags %}
+
+<div class="list-group mt-5">
+    <a href="{% url 'index' %}" class="border border-dark list-group-item list-group-item-action {% if 'Home Amazon' in title %} bg-dark text-light {% endif %}" aria-current="true">
+        Filters
+    </a>
+    {% get_sorters as sorters %}
+    {% for key, value in sorters.items %}
+    <a href="?sort={{ key }}" class="list-group-item list-group-item-action border border-dark {% if category.title in title %} bg-dark text-light {% endif %}">{{ value }}</a>
+    {% endfor %}
+</div>

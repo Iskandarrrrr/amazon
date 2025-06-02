@@ -1,0 +1,8 @@
+<div class="list-group">
+    <a href="{% url 'index' %}" class="border border-dark list-group-item list-group-item-action {% if 'Home Amazon' in title %} bg-dark text-light {% endif %}" aria-current="true">
+        All categories
+    </a>
+    {% for category in categories %}
+    <a href="{% url 'category' category.pk %}" class="list-group-item list-group-item-action border border-dark {% if category.title in title %} bg-dark text-light {% endif %}">{{ category.title }}</a>
+    {% endfor %}
+</div>

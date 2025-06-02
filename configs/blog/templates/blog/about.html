@@ -1,0 +1,33 @@
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'blog/css/profile.css' %}">
+
+
+<body style="background-color: white;" class="">
+<a href="{% url 'index' %}">
+    <img style="width: 50px; margin-left: 50px;" src="{% static 'blog/img/undo.png' %}" alt="">
+</a>
+<div class="profile-cards" style="display: flex; justify-content: center; margin-top: 120px;">
+
+    <div class="card card-1">
+
+        <div class="card-description">
+
+            <h2 class="card-description-title">Wilford Remy Bardsley</h2>
+
+            <span class="card-description-profession">Back-End Developer</span>
+
+            <span class="card-description-company">@Google</span>
+
+
+        </div>
+
+        <img src="https://i.ytimg.com/vi/PS0QdYJYQJM/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGGQgZChkMA8=&rs=AOn4CLBRmA1e81H70DqVxaStq0fG_6ahDg"
+             class="card-image">
+
+    </div>
+
+
+</div>
+
+</body>
